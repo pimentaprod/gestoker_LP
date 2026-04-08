@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120" width="400" height="120">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&amp;display=swap');
+      .logo-text {
+        font-family: 'Playfair Display', serif;
+        font-weight: 700;
+        font-size: 72px;
+        letter-spacing: -0.03em;
+      }
+    </style>
+  </defs>
+  <!-- Background transparente -->
+  <rect width="400" height="120" fill="none"/>
+  <!-- Gest -->
+  <text x="20" y="90" class="logo-text" fill="#ffffff">Gest</text>
+  <!-- ♠ (spade) em vermelho -->
+  <text x="196" y="90" class="logo-text" fill="#f0483e">♠</text>
+  <!-- ker -->
+  <text x="248" y="90" class="logo-text" fill="#ffffff">ker</text>
+</svg>

@@ -62,7 +62,7 @@ export default function Header() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold text-white transition-all duration-200 hover:scale-105 hover:brightness-110 active:scale-95"
             style={{
-              background: "#f0483e",
+              background: "#25D366",
               fontFamily: "var(--font-body)",
             }}
           >

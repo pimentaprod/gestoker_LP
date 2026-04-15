@@ -39,9 +39,9 @@ export default function Footer() {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 w-fit px-4 py-2.5 rounded-xl text-sm font-semibold text-white transition-all duration-200 hover:scale-105 hover:brightness-110"
               style={{
-                background: "rgba(240,72,62,0.15)",
-                border: "1px solid rgba(240,72,62,0.3)",
-                color: "#f0483e",
+                background: "rgba(37,211,102,0.12)",
+                border: "1px solid rgba(37,211,102,0.3)",
+                color: "#25D366",
                 fontFamily: "var(--font-body)",
               }}
             >

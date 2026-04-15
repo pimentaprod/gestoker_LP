@@ -12,28 +12,32 @@ export default function Hero() {
         }}
       />
 
-      {/* ── Background: suit characters ── */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none select-none">
+      {/* ── Background: suit characters floating ── */}
+      <div
+        className="absolute inset-0 overflow-hidden pointer-events-none select-none"
+        style={{ perspective: "900px" }}
+      >
         {[
-          { char: "♠", top: "10%", left: "5%", delay: "0s", size: "140px" },
-          { char: "♥", top: "20%", right: "8%", delay: "3s", size: "120px" },
-          { char: "♦", bottom: "25%", left: "12%", delay: "6s", size: "100px" },
-          { char: "♣", bottom: "15%", right: "6%", delay: "1.5s", size: "130px" },
-          { char: "♠", top: "55%", left: "48%", delay: "4s", size: "90px" },
+          { char: "♠", left: "4%",  size: "150px", duration: "20s", delay: "0s",   alt: false },
+          { char: "♥", left: "17%", size: "130px", duration: "17s", delay: "4s",   alt: true  },
+          { char: "♦", left: "31%", size: "165px", duration: "23s", delay: "8s",   alt: false },
+          { char: "♣", left: "48%", size: "140px", duration: "19s", delay: "2s",   alt: true  },
+          { char: "♠", left: "63%", size: "155px", duration: "22s", delay: "11s",  alt: true  },
+          { char: "♥", left: "76%", size: "120px", duration: "18s", delay: "6s",   alt: false },
+          { char: "♦", left: "87%", size: "145px", duration: "25s", delay: "14s",  alt: true  },
+          { char: "♣", left: "24%", size: "135px", duration: "21s", delay: "16s",  alt: false },
         ].map((s, i) => (
           <span
             key={i}
-            className="absolute font-bold animate-suit-drift"
+            className="absolute font-bold"
             style={{
               fontSize: s.size,
-              top: s.top,
-              left: (s as { left?: string }).left,
-              right: (s as { right?: string }).right,
-              bottom: (s as { bottom?: string }).bottom,
-              color: i === 1 || i === 3 ? "#f0483e" : "white",
-              opacity: 0.03,
-              animationDelay: s.delay,
+              left: s.left,
+              bottom: "-15%",
+              color: s.char === "♥" || s.char === "♦" ? "#f0483e" : "white",
               lineHeight: 1,
+              animation: `${s.alt ? "suitFloatAlt" : "suitFloat"} ${s.duration} ease-in-out ${s.delay} infinite`,
+              willChange: "transform, opacity",
             }}
           >
             {s.char}
@@ -88,8 +92,8 @@ export default function Hero() {
                 className="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-full font-semibold text-white transition-all duration-200 hover:scale-105 hover:brightness-110 active:scale-95"
                 style={{
                   background:
-                    "linear-gradient(135deg, #f0483e 0%, #d63832 100%)",
-                  boxShadow: "0 4px 24px rgba(240,72,62,0.35)",
+                    "linear-gradient(135deg, #25D366 0%, #1aad52 100%)",
+                  boxShadow: "0 4px 24px rgba(37,211,102,0.35)",
                   fontFamily: "var(--font-body)",
                 }}
               >
@@ -202,7 +206,7 @@ export default function Hero() {
                     className="text-xs"
                     style={{ color: "rgba(255,255,255,0.3)" }}
                   >
-                    gestoker.vercel.app
+                    www.gestoker.com
                   </span>
                 </div>
               </div>

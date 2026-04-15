@@ -237,9 +237,9 @@ export default function Pricing() {
                   plan.popular
                     ? {
                         background:
-                          "linear-gradient(135deg, #f0483e 0%, #d63832 100%)",
+                          "linear-gradient(135deg, #25D366 0%, #1aad52 100%)",
                         color: "white",
-                        boxShadow: "0 4px 20px rgba(240,72,62,0.3)",
+                        boxShadow: "0 4px 20px rgba(37,211,102,0.3)",
                         fontFamily: "var(--font-body)",
                       }
                     : {

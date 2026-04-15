@@ -40,8 +40,8 @@ export default function CtaBanner() {
           rel="noopener noreferrer"
           className="inline-flex items-center gap-3 px-8 py-4 rounded-2xl font-semibold text-base text-white transition-all duration-200 hover:scale-[1.03] hover:brightness-110 active:scale-[0.98]"
           style={{
-            background: "linear-gradient(135deg, #f0483e 0%, #d63832 100%)",
-            boxShadow: "0 8px 32px rgba(240,72,62,0.35)",
+            background: "linear-gradient(135deg, #25D366 0%, #1aad52 100%)",
+            boxShadow: "0 8px 32px rgba(37,211,102,0.35)",
             fontFamily: "var(--font-body)",
           }}
         >

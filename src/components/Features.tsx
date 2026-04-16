@@ -49,7 +49,7 @@ const features = [
   },
   {
     icon: "✨",
-    title: "Inteligência IA",
+    title: "Inteligência",
     description:
       "Relatórios inteligentes e insights gerados por IA para otimizar torneios e maximizar a receita do seu clube.",
     accent: "#f5c518",

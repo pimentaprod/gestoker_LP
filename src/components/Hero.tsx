@@ -183,18 +183,6 @@ export default function Hero() {
                   borderBottom: "1px solid rgba(255,255,255,0.06)",
                 }}
               >
-                <span
-                  className="w-3 h-3 rounded-full"
-                  style={{ background: "#f0483e" }}
-                />
-                <span
-                  className="w-3 h-3 rounded-full"
-                  style={{ background: "#f5c518" }}
-                />
-                <span
-                  className="w-3 h-3 rounded-full"
-                  style={{ background: "#10b981" }}
-                />
                 <div
                   className="ml-3 flex-1 h-5 rounded-md flex items-center px-3"
                   style={{

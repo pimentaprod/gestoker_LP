@@ -35,9 +35,9 @@ const faqs = [
       "Sim. Todos os dados são armazenados com criptografia em servidores seguros. Nenhuma informação do seu clube é compartilhada com terceiros.",
   },
   {
-    question: "O que é a Inteligência IA do plano Regular?",
+    question: "O que é a Inteligência do plano Regular?",
     answer:
-      "A Inteligência IA age como um gerente do seu clube — analisando os dados em tempo real para identificar automaticamente riscos e oportunidades do negócio, antes que você precise procurar por eles.",
+      "A Inteligência age como um gerente do seu clube — analisando os dados em tempo real para identificar automaticamente riscos e oportunidades do negócio, antes que você precise procurar por eles.",
   },
   {
     question: "Tenho suporte se precisar de ajuda?",

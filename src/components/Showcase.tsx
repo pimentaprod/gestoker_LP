@@ -85,7 +85,7 @@ const screens = [
   },
   {
     number: "08",
-    tag: "Inteligência IA",
+    tag: "Inteligência",
     title: "Insights gerados por IA sobre seu clube",
     description:
       "Relatórios automáticos de receita, alertas de churn, score de risco por jogador e análise do bar — tudo gerado por IA com base nos dados reais do seu clube.",
@@ -232,13 +232,14 @@ export default function Showcase() {
                       className="flex items-center gap-2 px-4 py-3"
                       style={{ background: "#0d111a", borderBottom: "1px solid rgba(255,255,255,0.06)" }}
                     >
-                      <div className="w-3 h-3 rounded-full" style={{ background: "#f0483e40" }} />
-                      <div className="w-3 h-3 rounded-full" style={{ background: "#f5c51840" }} />
-                      <div className="w-3 h-3 rounded-full" style={{ background: "#30d15840" }} />
                       <div
-                        className="ml-3 flex-1 rounded-md h-5 max-w-xs"
+                        className="ml-3 flex-1 rounded-md h-5 max-w-xs flex items-center px-3"
                         style={{ background: "rgba(255,255,255,0.05)" }}
-                      />
+                      >
+                        <span className="text-xs" style={{ color: "rgba(255,255,255,0.3)" }}>
+                          www.gestoker.com
+                        </span>
+                      </div>
                       {/* Expand hint */}
                       <span
                         className="ml-auto text-xs opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1"
@@ -287,15 +288,14 @@ export default function Showcase() {
               className="flex items-center gap-2 px-4 py-3"
               style={{ background: "#0d111a", borderBottom: "1px solid rgba(255,255,255,0.06)" }}
             >
-              <div className="w-3 h-3 rounded-full" style={{ background: "#f0483e40" }} />
-              <div className="w-3 h-3 rounded-full" style={{ background: "#f5c51840" }} />
-              <div className="w-3 h-3 rounded-full" style={{ background: "#30d15840" }} />
-              <span
-                className="ml-3 text-xs font-semibold"
-                style={{ color: lightbox.accent, fontFamily: "var(--font-body)" }}
+              <div
+                className="ml-3 flex-1 rounded-md h-5 max-w-xs flex items-center px-3"
+                style={{ background: "rgba(255,255,255,0.05)" }}
               >
-                {lightbox.tag}
-              </span>
+                <span className="text-xs" style={{ color: "rgba(255,255,255,0.3)", fontFamily: "var(--font-body)" }}>
+                  www.gestoker.com
+                </span>
+              </div>
               <button
                 onClick={() => setLightbox(null)}
                 className="ml-auto flex items-center justify-center w-7 h-7 rounded-lg transition-colors"
